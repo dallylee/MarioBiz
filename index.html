@@ -17,7 +17,8 @@
       "accent-ephemera": "#6B7280"
     };
     window.APP_COLORS = customColors;
-    tailwind.config = {
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
