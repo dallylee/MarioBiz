@@ -37,6 +37,19 @@
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
+    .thumb-art {
+      max-width: min(100%, 20rem);
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 640px) {
+      .thumb-art {
+        max-width: min(100%, 16rem);
+      }
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased font-sans">
@@ -49,7 +62,7 @@
             <button type="button" role="tab" id="tab-idea1" aria-controls="panel-idea1" aria-selected="false" tabindex="-1" data-tab-target="panel-idea1" class="tab-trigger flex-shrink-0 snap-start inline-flex items-center justify-center gap-2 rounded-full border border-transparent bg-white/20 px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white/80 transition-all duration-200 hover:bg-white/30 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Idea 1</button>
             <button type="button" role="tab" id="tab-idea2" aria-controls="panel-idea2" aria-selected="false" tabindex="-1" data-tab-target="panel-idea2" class="tab-trigger flex-shrink-0 snap-start inline-flex items-center justify-center gap-2 rounded-full border border-transparent bg-white/20 px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white/80 transition-all duration-200 hover:bg-white/30 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Idea 2</button>
             <button type="button" role="tab" id="tab-idea3" aria-controls="panel-idea3" aria-selected="false" tabindex="-1" data-tab-target="panel-idea3" class="tab-trigger flex-shrink-0 snap-start inline-flex items-center justify-center gap-2 rounded-full border border-transparent bg-white/20 px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white/80 transition-all duration-200 hover:bg-white/30 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Idea 3</button>
-            <button type="button" role="tab" id="tab-setup" aria-controls="panel-setup" aria-selected="false" tabindex="-1" data-tab-target="panel-setup" class="tab-trigger flex-shrink-0 snap-start inline-flex items-center justify-center gap-2 rounded-full border border-transparent bg-white/20 px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white/80 transition-all duration-200 hover:bg-white/30 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Setup</button>
+            <button type="button" role="tab" id="tab-setup" aria-controls="panel-setup" aria-selected="false" tabindex="-1" data-tab-target="panel-setup" class="tab-trigger flex-shrink-0 snap-start inline-flex items-center justify-center gap-2 rounded-full border border-transparent bg-white/20 px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white/80 transition-all duration-200 hover:bg-white/30 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Setup Etsy &amp; Printful</button>
           </div>
         </div>
       </div>
@@ -187,7 +200,7 @@
           <p class="text-base sm:text-lg text-slate-700">Focus on movement, speed, and energy, characteristic of Italian Futurism. Designs should incorporate dynamic lines, fragmented forms, and vibrant, often clashing primary colors.</p>
           <pre class="whitespace-pre-wrap rounded-xl border border-accent-futurism/30 bg-white/90 p-4 text-sm sm:text-base text-slate-800"><code>"A vector illustration of abstract dynamic lines and fragmented shapes, conveying speed and movement, in the style of Italian Futurism. Use a palette of vibrant yellow, electric blue, and deep red. The composition should suggest chaotic velocity. High resolution, transparent background, suitable for a tote bag print."</code></pre>
           <figure class="space-y-3">
-            <img src="images/futura1.jpg" alt="Dynamic lines and fragmented shapes in Futurist style" loading="lazy" class="w-full h-auto rounded-2xl border border-accent-futurism/30 shadow-sm">
+            <img src="images/futura1.jpg" alt="Dynamic lines and fragmented shapes in Futurist style" loading="lazy" class="w-full h-auto rounded-2xl border border-accent-futurism/30 shadow-sm thumb-art" data-lightbox-image tabindex="0">
             <figcaption class="text-sm sm:text-base text-slate-600 italic">Futurism illustration conveying speed and velocity.</figcaption>
           </figure>
         </article>
@@ -197,7 +210,7 @@
           <p class="text-base sm:text-lg text-slate-700">This design is focused on the authentic atmosphere of everyday Milanese streets and local businesses. It captures the textured, grungy, faded text found on local signs.</p>
           <pre class="whitespace-pre-wrap rounded-xl border border-accent-ephemera/30 bg-white/90 p-4 text-sm sm:text-base text-slate-800"><code>"A bold graphic featuring the phrase 'TABACCHERIA' in a stylized, vintage Italian block font. The design must incorporate heavy grunge and distressed textures, making it look like faded paint on an old wall. Use a muted two-color palette of aged cream and deep charcoal. The design should be a high-contrast illustration that evokes old Milanese street signage."</code></pre>
           <figure class="space-y-3">
-            <img src="images/ephemera1.png" alt="Distressed typography graphic with the word 'TABACCHERIA'" loading="lazy" class="w-full h-auto rounded-2xl border border-accent-ephemera/30 shadow-sm">
+            <img src="images/ephemera1.png" alt="Distressed typography graphic with the word 'TABACCHERIA'" loading="lazy" class="w-full h-auto rounded-2xl border border-accent-ephemera/30 shadow-sm thumb-art" data-lightbox-image tabindex="0">
             <figcaption class="text-sm sm:text-base text-slate-600 italic">Street Ephemera: Grungy Milanese typography.</figcaption>
           </figure>
         </article>
@@ -225,23 +238,23 @@
         <h3 class="text-xl sm:text-2xl font-semibold text-slate-900">Visual Identity, Store Banner, and Logo Examples</h3>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           <figure class="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
-            <img src="images/logo1.png" alt="Visual Identity, Store Banner, and Logo Examples image 1" loading="lazy" class="w-full h-auto rounded-xl">
+            <img src="images/logo1.png" alt="Visual Identity, Store Banner, and Logo Examples image 1" loading="lazy" class="w-full h-auto rounded-xl" data-lightbox-image tabindex="0">
             <figcaption class="text-sm sm:text-base text-slate-600 italic">Visual exploration 1</figcaption>
           </figure>
           <figure class="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
-            <img src="images/logo2.png" alt="Visual Identity, Store Banner, and Logo Examples image 2" loading="lazy" class="w-full h-auto rounded-xl">
+            <img src="images/logo2.png" alt="Visual Identity, Store Banner, and Logo Examples image 2" loading="lazy" class="w-full h-auto rounded-xl" data-lightbox-image tabindex="0">
             <figcaption class="text-sm sm:text-base text-slate-600 italic">Visual exploration 2</figcaption>
           </figure>
           <figure class="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
-            <img src="images/banner1.jpg" alt="Visual Identity, Store Banner, and Logo Examples image 3" loading="lazy" class="w-full h-auto rounded-xl">
+            <img src="images/banner1.jpg" alt="Visual Identity, Store Banner, and Logo Examples image 3" loading="lazy" class="w-full h-auto rounded-xl" data-lightbox-image tabindex="0">
             <figcaption class="text-sm sm:text-base text-slate-600 italic">Store banner concept 1</figcaption>
           </figure>
           <figure class="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
-            <img src="images/banner2.jpg" alt="Visual Identity, Store Banner, and Logo Examples image 4" loading="lazy" class="w-full h-auto rounded-xl">
+            <img src="images/banner2.jpg" alt="Visual Identity, Store Banner, and Logo Examples image 4" loading="lazy" class="w-full h-auto rounded-xl" data-lightbox-image tabindex="0">
             <figcaption class="text-sm sm:text-base text-slate-600 italic">Store banner concept 2</figcaption>
           </figure>
           <figure class="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
-            <img src="images/banner3.jpg" alt="Visual Identity, Store Banner, and Logo Examples image 5" loading="lazy" class="w-full h-auto rounded-xl">
+            <img src="images/banner3.jpg" alt="Visual Identity, Store Banner, and Logo Examples image 5" loading="lazy" class="w-full h-auto rounded-xl" data-lightbox-image tabindex="0">
             <figcaption class="text-sm sm:text-base text-slate-600 italic">Store banner concept 3</figcaption>
           </figure>
         </div>
@@ -251,11 +264,11 @@
         <h3 class="text-xl sm:text-2xl font-semibold text-slate-900">Examples of Designs on POD Products</h3>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <figure class="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
-            <img src="images/pod1.jpg" alt="Examples of Designs on POD Products image 1" loading="lazy" class="w-full h-auto rounded-xl">
+            <img src="images/pod1.jpg" alt="Examples of Designs on POD Products image 1" loading="lazy" class="w-full h-auto rounded-xl" data-lightbox-image tabindex="0">
             <figcaption class="text-sm sm:text-base text-slate-600 italic">POD product mockup 1</figcaption>
           </figure>
           <figure class="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
-            <img src="images/pod2.jpg" alt="Examples of Designs on POD Products image 2" loading="lazy" class="w-full h-auto rounded-xl">
+            <img src="images/pod2.jpg" alt="Examples of Designs on POD Products image 2" loading="lazy" class="w-full h-auto rounded-xl" data-lightbox-image tabindex="0">
             <figcaption class="text-sm sm:text-base text-slate-600 italic">POD product mockup 2</figcaption>
           </figure>
         </div>
@@ -366,6 +379,101 @@
   <footer class="bg-slate-900/90 py-6 text-center text-sm sm:text-base text-slate-200">
     &copy; 2024 Milano RMX Strategy Guide. Crafted with insights from Milan's artistic spirit.
   </footer>
+
+  <div id="lightboxOverlay" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-slate-900/80 p-4 sm:p-6 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true" data-lightbox-overlay>
+    <button type="button" class="absolute top-6 right-6 inline-flex items-center justify-center rounded-full bg-white/90 p-3 text-slate-900 shadow-lg transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" data-lightbox-close>
+      <span class="sr-only">Close</span>
+      <span aria-hidden="true" class="text-2xl leading-none">&times;</span>
+    </button>
+    <img data-lightbox-target src="" alt="" class="max-h-[80vh] w-auto max-w-full rounded-2xl border border-white/20 shadow-2xl" loading="lazy">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const overlay = document.getElementById('lightboxOverlay');
+      if (!overlay) return;
+      const overlayImage = overlay.querySelector('[data-lightbox-target]');
+      const closeButton = overlay.querySelector('[data-lightbox-close]');
+      const triggers = document.querySelectorAll('[data-lightbox-image]');
+      let activeLightboxTrigger = null;
+
+      if (!overlayImage || !closeButton) return;
+
+      triggers.forEach((trigger) => {
+        if (!trigger.hasAttribute('tabindex')) {
+          trigger.setAttribute('tabindex', '0');
+        }
+        if (!trigger.hasAttribute('role')) {
+          trigger.setAttribute('role', 'button');
+        }
+        trigger.setAttribute('aria-haspopup', 'dialog');
+      });
+
+      const openLightbox = (trigger) => {
+        if (!(trigger instanceof HTMLElement)) return;
+        const source = trigger.getAttribute('src');
+        const description = trigger.getAttribute('alt') || '';
+        if (!source) return;
+        overlayImage.src = source;
+        overlayImage.alt = description;
+        overlay.classList.remove('hidden');
+        overlay.removeAttribute('aria-hidden');
+        document.body.classList.add('overflow-hidden');
+        activeLightboxTrigger = trigger;
+        window.requestAnimationFrame(() => {
+          closeButton.focus({ preventScroll: true });
+        });
+      };
+
+      const closeLightbox = () => {
+        if (overlay.classList.contains('hidden')) return;
+        overlay.classList.add('hidden');
+        overlay.setAttribute('aria-hidden', 'true');
+        overlayImage.removeAttribute('src');
+        overlayImage.alt = '';
+        document.body.classList.remove('overflow-hidden');
+        if (activeLightboxTrigger instanceof HTMLElement) {
+          activeLightboxTrigger.focus({ preventScroll: true });
+        }
+        activeLightboxTrigger = null;
+      };
+
+      document.addEventListener('click', (event) => {
+        const trigger = event.target.closest('[data-lightbox-image]');
+        if (trigger) {
+          event.preventDefault();
+          openLightbox(trigger);
+          return;
+        }
+      });
+
+      overlay.addEventListener('click', (event) => {
+        if (event.target === overlay) {
+          closeLightbox();
+        }
+      });
+
+      closeButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        closeLightbox();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if ((event.key === 'Enter' || event.key === ' ') && event.target instanceof HTMLElement) {
+          const trigger = event.target.closest('[data-lightbox-image]');
+          if (trigger) {
+            event.preventDefault();
+            openLightbox(trigger);
+            return;
+          }
+        }
+        if (event.key === 'Escape' && !overlay.classList.contains('hidden')) {
+          event.preventDefault();
+          closeLightbox();
+        }
+      });
+    });
+  </script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
