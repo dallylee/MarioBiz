@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -8,19 +8,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script>
-    tailwind = {
-      config: {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'ui-sans-serif', 'system-ui']
-            },
-            colors: {
-              'primary-memphis': '#FF00A6',
-              'secondary-rationalism': '#A0522D',
-              'accent-futurism': '#E44C4C',
-              'accent-ephemera': '#6B7280'
-            }
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+          },
+          colors: {
+            'primary-memphis': '#FF00A6',
+            'secondary-rationalism': '#A0522D',
+            'accent-futurism': '#E44C4C',
+            'accent-ephemera': '#6B7280'
           }
         }
       }
